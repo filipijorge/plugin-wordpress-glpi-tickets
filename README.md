@@ -16,4 +16,8 @@ $app_token = "APP TOKEN";
 $user_token = "USER TOKEN";
 "requesttypes_id" => 8,
 ```
-Origens de requisição podem ser criadas em: `https://url-do-glpi/front/requesttype.php`
+Origens de requisição podem ser criadas em `https://url-do-glpi/front/requesttype.php`. Clicando na origem, o ID aparece na url da página. Essa opção foi usada para que os chamados originados do Wordpress possam ser identificados posteriormente. 
+
+O app token pode ser gerado no menu `configurar>geral>api`. Basta adicionar um cliente de API e gerar o token.
+
+O user token pode ser gerado editando um usuário.
