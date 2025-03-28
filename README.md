@@ -6,4 +6,6 @@ A página criada fica com um formulário que só é visível para usuário logad
 
 GLPI e Wordpress precisam ter usuários iguais. No ambiente em que foi feito, ambos possuem integração dom LDAP.
 
+O plugin deve ficar dentro do diretório  /wp-content/plugins/nome-do-seu-plugin.
+
 
