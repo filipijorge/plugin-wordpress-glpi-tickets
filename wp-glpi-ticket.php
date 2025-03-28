@@ -47,8 +47,8 @@ add_shortcode('glpi_form', 'glpi_ticket_form');
 
 function glpi_create_ticket($titulo, $descricao, $tipo, $requerente_username) {
     $glpi_url = "https://chamados.camaraindaiatuba.sp.gov.br/apirest.php";
-    $app_token = "dd1dQZsI9WyQcrG4Sb1Kdoma1yOnAVYwETeZCOqi";
-    $user_token = "gZgi85G3auvVWbkfxde16u0I1FiEeYSHew1j6W14";
+    $app_token = "APP TOKEN"; // token de de app do GLPI
+    $user_token = "USER TOKEN"; // token de usuário do GLPI
     
     function glpi_request($url, $method = "GET", $headers = [], $data = null) {
         $ch = curl_init($url);
@@ -97,7 +97,7 @@ function glpi_create_ticket($titulo, $descricao, $tipo, $requerente_username) {
         "content" => $descricao,
         "type" => $tipo,
         "_users_id_requester" => $requerente_id,
-        "requesttypes_id" => 8,
+        "requesttypes_id" => 8, //mudar o número de acordo com id de origem da requisição ou eliminar a linha se não for necessária
     ]];
     
     $ticket_response = glpi_request("$glpi_url/Ticket/", "POST", [
