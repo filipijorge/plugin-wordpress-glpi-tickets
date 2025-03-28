@@ -1,4 +1,4 @@
-# plugin-wordpress-glpi-tickets
+# Plugin de Wordpress para criar chamados no GLPI
 
 Este plugin cria um shortcode para ser adicionado à uma página do Wordpress.
 
